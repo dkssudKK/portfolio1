@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build:static": "node scripts/export-html.mjs"
+  },
   "dependencies": {
     "legacy": "^0.0.3"
   }

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Assignment 3 Furniture Landing Illustration</title>
+  <desc id="desc">Warm interior landing page mock with hero text and furniture scene in orange and green tones.</desc>
+  <defs>
+    <linearGradient id="sunset" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7c38a"/>
+      <stop offset="100%" stop-color="#d97356"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2b806d"/>
+      <stop offset="100%" stop-color="#1f5d4e"/>
+    </linearGradient>
+    <linearGradient id="sofa" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e58a54"/>
+      <stop offset="100%" stop-color="#cf6a3d"/>
+    </linearGradient>
+    <linearGradient id="button" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f3b36a"/>
+      <stop offset="100%" stop-color="#f28a37"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#wall)"/>
+  <rect x="80" y="100" width="480" height="420" rx="40" fill="rgba(0,0,0,0.15)"/>
+  <rect x="80" y="100" width="480" height="420" rx="40" fill="rgba(0,0,0,0.12)"/>
+  <rect x="640" y="90" width="460" height="440" rx="36" fill="rgba(0,0,0,0.18)"/>
+  <circle cx="960" cy="150" r="90" fill="url(#sunset)" opacity="0.85"/>
+  <ellipse cx="980" cy="360" rx="280" ry="180" fill="rgba(0,0,0,0.18)"/>
+  <path d="M750 360C790 320 870 300 910 320C950 340 990 330 1028 330C1080 330 1110 360 1120 410C1130 460 1070 510 960 520C870 530 790 500 770 450C750 400 720 400 720 390C720 374 740 366 750 360Z" fill="url(#sofa)"/>
+  <ellipse cx="880" cy="450" rx="120" ry="48" fill="#be5a2d" opacity="0.45"/>
+  <path d="M820 315C820 290 850 280 870 300C890 320 890 350 870 360C850 370 820 340 820 315Z" fill="#f0c394" opacity="0.7"/>
+  <rect x="110" y="140" width="420" height="40" rx="20" fill="rgba(255,255,255,0.08)"/>
+  <text x="110" y="190" font-family="Poppins, 'Segoe UI', sans-serif" font-weight="700" font-size="72" fill="#ffffff">
+    Design furniture for
+  </text>
+  <text x="110" y="260" font-family="Poppins, 'Segoe UI', sans-serif" font-weight="700" font-size="72" fill="#ffffff">
+    spaces that breathe.
+  </text>
+  <text x="110" y="320" font-family="'Segoe UI', sans-serif" font-size="20" fill="rgba(255,255,255,0.75)">
+    Experience curated interior collections inspired by airy desert lodges.
+  </text>
+  <text x="110" y="352" font-family="'Segoe UI', sans-serif" font-size="20" fill="rgba(255,255,255,0.75)">
+    Sustainable materials, timeless palettes, and sculpted silhouettes.
+  </text>
+  <rect x="110" y="390" width="180" height="54" rx="27" fill="url(#button)"/>
+  <text x="142" y="424" font-family="'Segoe UI', sans-serif" font-weight="600" font-size="22" fill="#2b2b2b">
+    Explore now
+  </text>
+  <rect x="310" y="390" width="160" height="54" rx="27" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.28)" stroke-width="2"/>
+  <text x="340" y="424" font-family="'Segoe UI', sans-serif" font-weight="600" font-size="22" fill="#ffffff">
+    View catalog
+  </text>
+  <g fill="rgba(255,255,255,0.6)">
+    <circle cx="130" cy="460" r="8"/>
+    <circle cx="160" cy="460" r="8" opacity="0.7"/>
+    <circle cx="190" cy="460" r="8" opacity="0.5"/>
+    <circle cx="220" cy="460" r="8" opacity="0.35"/>
+  </g>
+  <text x="110" y="508" font-family="'Segoe UI', sans-serif" font-size="18" fill="rgba(255,255,255,0.65)">
+    Selected pieces ship within 7 days. Complimentary design assistance available.
+  </text>
+</svg>
+
+
+

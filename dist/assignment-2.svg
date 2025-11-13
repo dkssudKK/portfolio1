@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Assignment 2 Financial Dashboard Illustration</title>
+  <desc id="desc">Dark theme budgeting dashboard layout with cards, charts, and side navigation highlights.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1f2b"/>
+      <stop offset="100%" stop-color="#12151d"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f2633"/>
+      <stop offset="100%" stop-color="#151922"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="80" y="40" width="240" height="550" rx="28" fill="url(#card)" opacity="0.95"/>
+  <rect x="360" y="100" width="380" height="180" rx="24" fill="url(#card)" opacity="0.95"/>
+  <rect x="770" y="100" width="280" height="180" rx="24" fill="url(#card)" opacity="0.9"/>
+  <rect x="360" y="320" width="690" height="200" rx="28" fill="url(#card)" opacity="0.92"/>
+  <rect x="360" y="540" width="460" height="70" rx="20" fill="url(#card)" opacity="0.85"/>
+  <rect x="860" y="540" width="190" height="70" rx="20" fill="url(#card)" opacity="0.8"/>
+  <g fill="#2a3241" opacity="0.85">
+    <rect x="110" y="100" width="180" height="42" rx="12"/>
+    <rect x="110" y="170" width="180" height="42" rx="12"/>
+    <rect x="110" y="240" width="180" height="42" rx="12"/>
+    <rect x="110" y="310" width="180" height="42" rx="12"/>
+    <rect x="110" y="380" width="180" height="42" rx="12"/>
+    <rect x="110" y="450" width="180" height="42" rx="12"/>
+  </g>
+  <circle cx="130" cy="120" r="6" fill="#4f8fff"/>
+  <rect x="152" y="110" width="78" height="20" rx="10" fill="#4f8fff" opacity="0.7"/>
+  <circle cx="130" cy="190" r="6" fill="#f29f51"/>
+  <rect x="152" y="180" width="92" height="20" rx="10" fill="#f29f51" opacity="0.7"/>
+  <g fill="#ffffff" opacity="0.7">
+    <rect x="390" y="130" width="120" height="18" rx="9"/>
+    <rect x="390" y="160" width="200" height="14" rx="7" opacity="0.6"/>
+    <rect x="390" y="190" width="160" height="14" rx="7" opacity="0.45"/>
+    <rect x="800" y="130" width="120" height="18" rx="9"/>
+    <rect x="800" y="160" width="180" height="14" rx="7" opacity="0.6"/>
+  </g>
+  <g opacity="0.6">
+    <path d="M410 360C470 320 530 340 590 380C650 420 710 440 770 410C830 380 890 300 950 340C1010 380 1070 360 1090 352" fill="none" stroke="#6ac6a0" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="470" cy="352" r="9" fill="#6ac6a0"/>
+    <circle cx="650" cy="408" r="9" fill="#6ac6a0" opacity="0.8"/>
+    <circle cx="860" cy="360" r="9" fill="#6ac6a0" opacity="0.8"/>
+  </g>
+  <g opacity="0.55">
+    <rect x="400" y="548" width="120" height="18" rx="9" fill="#4f8fff"/>
+    <rect x="540" y="548" width="160" height="18" rx="9" fill="#1e88ff" opacity="0.7"/>
+    <rect x="890" y="548" width="120" height="18" rx="9" fill="#f29f51" opacity="0.8"/>
+  </g>
+  <g opacity="0.5" fill="#ffffff">
+    <rect x="390" y="230" width="180" height="12" rx="6"/>
+    <rect x="390" y="255" width="140" height="12" rx="6" opacity="0.6"/>
+    <rect x="800" y="190" width="160" height="12" rx="6" opacity="0.6"/>
+  </g>
+</svg>
+
+
+
