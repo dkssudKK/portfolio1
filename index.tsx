@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+const htmlDocument = String.raw`<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -1900,7 +1900,7 @@
             toggles.forEach(toggle => {
                 toggle.addEventListener('click', function() {
                     const toggleId = this.getAttribute('data-figma-toggle');
-                    const content = document.querySelector(`[data-figma-content="${toggleId}"]`);
+                    const content = document.querySelector(\[data-figma-content="${toggleId}"]\);
                     
                     if (content) {
                         const isActive = this.classList.contains('active');
@@ -1946,7 +1946,7 @@
                 let html = '';
                 for (let i = 0; i < text.length; i++) {
                     const char = text[i];
-                    html += `<span>${char}</span>`;
+                    html += \<span>${char}</span>\;
                 }
                 return html;
             }
@@ -2013,3 +2013,10 @@
     </script>
 </body>
 </html>
+` as const;
+
+const IndexPage = () => (
+  <div dangerouslySetInnerHTML={{ __html: htmlDocument }} />
+);
+
+export default IndexPage;
