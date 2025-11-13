@@ -1478,10 +1478,10 @@
                             <div class="project-content">
                                 <div class="project-header">
                                     <h3 class="project-title">
-                                        <a href="https://calendar-ten-khaki.vercel.app" target="_blank" rel="noopener noreferrer">캘린더 앱</a>
+                                        <a href="https://rogi-eight.vercel.app" target="_blank" rel="noopener noreferrer">캘린더 앱</a>
                                     </h3>
                                     <p class="project-subtitle">
-                                        <a href="https://calendar-ten-khaki.vercel.app" target="_blank" rel="noopener noreferrer" style="pointer-events: auto; z-index: 100;">주소</a>
+                                        <a href="https://rogi-eight.vercel.app" target="_blank" rel="noopener noreferrer" style="pointer-events: auto; z-index: 100;">주소</a>
                                     </p>
                                 </div>
                                 
@@ -1521,10 +1521,10 @@
                             <div class="project-content">
                                 <div class="project-header">
                                     <h3 class="project-title">
-                                        <a href="https://v0-budgeting-app-logic.vercel.app" target="_blank" rel="noopener noreferrer">예산 관리 앱</a>
+                                        <a href="https://mai-nrepository.vercel.app" target="_blank" rel="noopener noreferrer">예산 관리 앱</a>
                                     </h3>
                                     <p class="project-subtitle">
-                                        <a href="https://v0-budgeting-app-logic.vercel.app" target="_blank" rel="noopener noreferrer" style="pointer-events: auto; z-index: 100;">주소</a>
+                                        <a href="https://mai-nrepository.vercel.app" target="_blank" rel="noopener noreferrer" style="pointer-events: auto; z-index: 100;">주소</a>
                                     </p>
                                 </div>
                                 
@@ -1565,10 +1565,10 @@
                             <div class="project-content">
                                 <div class="project-header">
                                     <h3 class="project-title">
-                                        <a href="https://v0-katachi-oj.vercel.app" target="_blank" rel="noopener noreferrer">가구 디자인 쇼핑몰</a>
+                                        <a href="https://katachi-omega.vercel.app/" target="_blank" rel="noopener noreferrer">가구 디자인 쇼핑몰</a>
                                     </h3>
                                     <p class="project-subtitle">
-                                        <a href="https://v0-katachi-oj.vercel.app" target="_blank" rel="noopener noreferrer" style="pointer-events: auto; z-index: 100;">주소</a>
+                                        <a href="https://katachi-omega.vercel.app/" target="_blank" rel="noopener noreferrer" style="pointer-events: auto; z-index: 100;">주소</a>
                                     </p>
                                 </div>
                                 
@@ -1621,8 +1621,8 @@
                                 <h3 class="text-lg font-semibold mb-1">온라인 강의 수강</h3>
                                 <p class="text-xs text-white/40 mb-3">2023.01 ~ 2023.02</p>
                                 <ul class="space-y-2 text-xs text-white/60">
-                                    <li>• HTML/CSS/JS 기초</li>
-                                    <li>• React.js 심화</li>
+                                    <li>• TypeScript</li>
+                                    <li>• React 기초</li>
                                     <li>• Next.js 풀스택 개발</li>
                                     <li>• TypeScript 마스터 클래스</li>
                                 </ul>
@@ -1637,14 +1637,14 @@
                         <div class="space-y-6">
                             <div>
                                 <h3 class="text-lg font-semibold mb-3">이메일</h3>
-                                <a href="mailto:your.email@example.com" class="text-sm text-white/70 hover:text-primary transition-colors">
-                                    your.email@example.com
+                                <a href="mailto:ahhwuqgv12@gmail.com" class="text-sm text-white/70 hover:text-primary transition-colors">
+                                    ahhwuqgv12@gmail.com
                                 </a>
                             </div>
                             <div>
                                 <h3 class="text-lg font-semibold mb-3">전화번호</h3>
-                                <a href="tel:010-1234-5678" class="text-sm text-white/70 hover:text-primary transition-colors">
-                                    010-1234-5678
+                                <a href="tel:010-8828-3585" class="text-sm text-white/70 hover:text-primary transition-colors">
+                                    010 8828 3585
                                 </a>
                             </div>
                             <div class="flex gap-4 pt-4">
@@ -1752,7 +1752,9 @@
         function initScrollProgress() {
             const scrollProgress = document.getElementById('scroll-progress');
             const scrollDots = document.querySelectorAll('.scroll-dot');
-            const sections = document.querySelectorAll('section[id]');
+            const sections = Array.from(scrollDots)
+                .map(dot => document.getElementById(dot.getAttribute('data-section')))
+                .filter(Boolean);
 
             function updateScrollProgress() {
                 const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -1763,15 +1765,15 @@
                 }
 
                 // Update active dot based on current section
-                let current = '';
-                const scrollY = window.pageYOffset + window.innerHeight / 2;
+                let current = sections.length ? sections[0].id : '';
+                const scrollY = window.pageYOffset;
+                const activationOffset = 140;
 
                 sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    const sectionHeight = section.clientHeight;
+                    const sectionTop = section.getBoundingClientRect().top + window.pageYOffset - activationOffset;
                     const sectionId = section.getAttribute('id');
-                    
-                    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+
+                    if (scrollY >= sectionTop) {
                         current = sectionId;
                     }
                 });
